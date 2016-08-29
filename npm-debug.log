@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'vue' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData vue
+8 silly fetchNamedPackageData vue
+9 silly mapToRegistry name vue
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'vue',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'vue',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/vue
+14 verbose request uri https://registry.npmjs.org/vue
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 23:45:16
+17 verbose request id 641f0dd5de12ebee
+18 verbose etag "8EH6IOR3IJAO67WPM4COWEH7Q"
+19 http request GET https://registry.npmjs.org/vue
+20 http 304 https://registry.npmjs.org/vue
+21 verbose headers { date: 'Mon, 23 May 2016 14:45:16 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"8EH6IOR3IJAO67WPM4COWEH7Q"',
+21 verbose headers   age: '286',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-itm7426-ITM',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1464014716.050387,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Mon, 23 May 2016 14:45:16 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"8EH6IOR3IJAO67WPM4COWEH7Q"',
+22 silly get     age: '286',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-itm7426-ITM',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1464014716.050387,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/vue from cache
+24 verbose get saving vue to /Users/user/.npm/registry.npmjs.org/vue/.cache.json
+25 verbose correctMkdir /Users/user/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Refusing to install vue as a dependency of itself
+43 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+43 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+43 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+43 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+44 verbose cwd /Users/user/development/todos/vue
+45 error Darwin 15.4.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "vue"
+47 error node v5.10.1
+48 error npm  v3.8.3
+49 error code ENOSELF
+50 error Refusing to install vue as a dependency of itself
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
